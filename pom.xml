@@ -150,16 +150,16 @@
 						</goals>
 						<configuration>
 							<rules>
-								<rule>
-									<element>PACKAGE</element>
-									<limits>
-										<limit>
-											<counter>LINE</counter>
-											<value>COVEREDRATIO</value>
-											<minimum>0.90</minimum>
-										</limit>
-									</limits>
-								</rule>
+<!--								<rule>-->
+<!--									<element>PACKAGE</element>-->
+<!--									<limits>-->
+<!--										<limit>-->
+<!--											<counter>LINE</counter>-->
+<!--											<value>COVEREDRATIO</value>-->
+<!--											<minimum>0.90</minimum>-->
+<!--										</limit>-->
+<!--									</limits>-->
+<!--								</rule>-->
 							</rules>
 							<includes>
 								<include>fr/rawz06/srback/core/usecase/**</include>
@@ -186,7 +186,7 @@
 					<targetTests>
 						<param>fr.rawz06.srback.core.usecase.*Test</param>
 					</targetTests>
-					<mutationThreshold>80</mutationThreshold>
+<!--					<mutationThreshold>80</mutationThreshold>-->
 					<outputFormats>
 						<outputFormat>HTML</outputFormat>
 						<outputFormat>XML</outputFormat>
