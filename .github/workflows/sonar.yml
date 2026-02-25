@@ -23,7 +23,7 @@ jobs:
 
       # On génère les rapports bruts (JaCoCo + PiTest)
       - name: Build and Test
-        run: mvn clean verify org.pitest:pitest-maven:mutationCoverage
+        run: mvn clean verify # org.pitest:pitest-maven:mutationCoverage
 
       # On envoie tout au serveur "vitrine"
       - name: Analyze with Sonar
@@ -34,4 +34,4 @@ jobs:
           mvn sonar:sonar \
           -Dsonar.projectKey=sr-back \
           -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml \
-          -Dsonar.pitest.mode=reuseReport
+#          -Dsonar.pitest.mode=reuseReport

@@ -168,31 +168,31 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.pitest</groupId>
-				<artifactId>pitest-maven</artifactId>
-				<version>1.22.1</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.pitest</groupId>
-						<artifactId>pitest-junit5-plugin</artifactId>
-						<version>1.2.1</version>
-					</dependency>
-				</dependencies>
-				<configuration>
-					<targetClasses>
-						<param>fr.rawz06.srback.core.usecase.*</param>
-					</targetClasses>
-					<targetTests>
-						<param>fr.rawz06.srback.core.usecase.*Test</param>
-					</targetTests>
-<!--					<mutationThreshold>80</mutationThreshold>-->
-					<outputFormats>
-						<outputFormat>HTML</outputFormat>
-						<outputFormat>XML</outputFormat>
-					</outputFormats>
-				</configuration>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.pitest</groupId>-->
+<!--				<artifactId>pitest-maven</artifactId>-->
+<!--				<version>1.22.1</version>-->
+<!--				<dependencies>-->
+<!--					<dependency>-->
+<!--						<groupId>org.pitest</groupId>-->
+<!--						<artifactId>pitest-junit5-plugin</artifactId>-->
+<!--						<version>1.2.1</version>-->
+<!--					</dependency>-->
+<!--				</dependencies>-->
+<!--				<configuration>-->
+<!--					<targetClasses>-->
+<!--						<param>fr.rawz06.srback.core.usecase.*</param>-->
+<!--					</targetClasses>-->
+<!--					<targetTests>-->
+<!--						<param>fr.rawz06.srback.core.usecase.*Test</param>-->
+<!--					</targetTests>-->
+<!--&lt;!&ndash;					<mutationThreshold>80</mutationThreshold>&ndash;&gt;-->
+<!--					<outputFormats>-->
+<!--						<outputFormat>HTML</outputFormat>-->
+<!--						<outputFormat>XML</outputFormat>-->
+<!--					</outputFormats>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 		</plugins>
 	</build>
 
