@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Important pour que Sonar voit l'historique de code
+          fetch-depth: 0
 
       - name: Set up JDK
         uses: actions/setup-java@v4
@@ -21,11 +21,9 @@ jobs:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
 
-      # On génère les rapports bruts (JaCoCo + PiTest)
       - name: Build and Test
         run: mvn clean verify # org.pitest:pitest-maven:mutationCoverage
 
-      # On envoie tout au serveur "vitrine"
       - name: Analyze with Sonar
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
